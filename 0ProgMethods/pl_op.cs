@@ -14,7 +14,8 @@ namespace _0ProgMethods
         {
             string[] cnt = content.Split(' ');
             base.devYear = int.Parse(cnt[1]);
-            i = int.Parse(cnt[2]);
+            base.timesSearched = int.Parse(cnt[2]);
+            i = int.Parse(cnt[3]);
         }
         int i = 0;
         
