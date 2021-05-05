@@ -25,6 +25,7 @@ namespace _0ProgMethods
             {
                 case 0: langObj = new pl_proc(id, content); break;
                 case 1: langObj = new pl_op(id, content); break;
+                case 2: langObj = new FunctionalLang(id, content); break;
                 default: break;
             }
 
