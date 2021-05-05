@@ -24,7 +24,7 @@ namespace _0ProgMethods
             //Console.WriteLine("Container contains {0} elements",container.Count());
             writer.WriteLine("Container contains {0} elements", container.Count());
             container.Print(writer);
-
+            
             container.Clear();
             writer.WriteLine("Cleared");
             writer.WriteLine("Container contains {0} elements", container.Count());
