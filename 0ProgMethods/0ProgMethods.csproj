@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Age.cs" />
     <Compile Include="Backups.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="lang.cs" />

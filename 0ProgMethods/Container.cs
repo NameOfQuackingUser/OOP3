@@ -53,7 +53,20 @@ namespace _0ProgMethods
             else
                 return 0;
         }
-        
+        public void Sort()
+        {
+            lang[] tmp = head.ToArray();
+            for (int i = 0; i < tmp.Length - 1; i++)
+                for (int j = i + 1; j < tmp.Length; j++) 
+                    if(Age.Compare(tmp[i],tmp[j]))
+                    {
+                        lang t = tmp[i];
+                        tmp[i] = tmp[j];
+                        tmp[j] = t;
+                    }
+            head = new Nod();
+            head.In(tmp, 0);
+        }
 
 
     }
