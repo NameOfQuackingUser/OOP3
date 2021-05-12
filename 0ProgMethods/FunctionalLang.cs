@@ -13,8 +13,9 @@ namespace _0ProgMethods
         {
             string[] cnt = content.Split(' ');
             base.devYear = int.Parse(cnt[1]);
-            i = int.Parse(cnt[2]);
-            lazyCalc = bool.Parse(cnt[3]);
+            base.timesSearched = int.Parse(cnt[2]);
+            i = int.Parse(cnt[3]);
+            lazyCalc = bool.Parse(cnt[4]);
         }
         int i = 0;
         bool lazyCalc;
