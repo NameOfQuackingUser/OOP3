@@ -17,10 +17,11 @@ namespace _0ProgMethods
 
         public int id = 0;
         public int devYear;
+        public int timesSearched;
 
         public virtual void Print(StreamWriter writer)
         {
-            writer.Write("Id: {0}\tDevelopment year: {1}", id, devYear);
+            writer.Write("Id: {0}\tDevelopment year: {1}\tTimes searched: {2}", id, devYear, timesSearched);
         }
 
     }

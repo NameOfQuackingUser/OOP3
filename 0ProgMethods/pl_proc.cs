@@ -14,7 +14,8 @@ namespace _0ProgMethods
         {
             string[] cnt = content.Split(' ');
             base.devYear = int.Parse(cnt[1]);
-            isItAbstract = bool.Parse(cnt[2]);
+            base.timesSearched = int.Parse(cnt[2]);
+            isItAbstract = bool.Parse(cnt[3]);
         }
         
         private int devYear;
