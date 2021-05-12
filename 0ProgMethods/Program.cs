@@ -14,8 +14,18 @@ namespace _0ProgMethods
             Console.WriteLine("Start...");
 
             Container container = new Container();
-
-            StreamReader reader = new StreamReader("in.txt");
+            StreamReader reader;
+            try
+            {
+                reader = new StreamReader("in.txt");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.ReadLine();
+                return;
+            }
+            
             StreamWriter writer = new StreamWriter("out.txt");
             writer.WriteLine("Start...");
 

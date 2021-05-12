@@ -18,9 +18,12 @@ namespace _0ProgMethods
 
         public void In(lang[] langs, int currentIndex)
         {
+            if(langs[currentIndex] != null)
+            {
+                langObj = langs[currentIndex];
+                langObj.id = currentIndex;
+            }
             
-            langObj = langs[currentIndex];
-            langObj.id = currentIndex;
             next = new Nod();
             if(langs.Length > currentIndex + 1)
             {
@@ -34,18 +37,25 @@ namespace _0ProgMethods
 
         public void In(StreamReader reader)
         {
-            string content = reader.ReadLine();
 
-            i = int.Parse(content[0].ToString());
-
-            switch (i)
+            try
             {
-                case 0: langObj = new pl_proc(id, content); break;
-                case 1: langObj = new pl_op(id, content); break;
-                case 2: langObj = new FunctionalLang(id, content); break;
-                default: break;
-            }
+                string content = reader.ReadLine();
 
+                i = int.Parse(content[0].ToString());
+
+                switch (i)
+                {
+                    case 0: langObj = new pl_proc(id, content); break;
+                    case 1: langObj = new pl_op(id, content); break;
+                    case 2: langObj = new FunctionalLang(id, content); break;
+                    default: break;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
             if (!reader.EndOfStream)
             {
@@ -54,6 +64,8 @@ namespace _0ProgMethods
                 next.id = id + 1;
                 next.In(reader);
             }
+            
+            
 
         }
 
@@ -62,10 +74,18 @@ namespace _0ProgMethods
 
         public void Print(StreamWriter writer, int filter)
         {
-            if (langObj != null && (i == filter || filter == -1))
-                langObj.Print(writer);
-            if (next != null)
-                next.Print(writer, filter);
+            try
+            {
+                if (langObj != null && (i == filter || filter == -1))
+                    langObj.Print(writer);
+                if (next != null)
+                    next.Print(writer, filter);
+            }catch(Exception ex)
+            {
+                writer.WriteLine("ERROR");
+            }
+
+            
         }
 
 

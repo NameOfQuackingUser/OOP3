@@ -10,6 +10,8 @@ namespace _0ProgMethods
     {
         public static bool Compare(lang lang1, lang lang2)
         {
+            if (lang1 == null || lang2 == null)
+                return false;
             return lang1.HowOldIsLang() < lang2.HowOldIsLang();
         }
     }
