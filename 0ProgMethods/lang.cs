@@ -21,8 +21,12 @@ namespace _0ProgMethods
 
         public virtual void Print(StreamWriter writer)
         {
-            writer.Write("Id: {0}\tDevelopment year: {1}\tTimes searched: {2}", id, devYear, timesSearched);
+            writer.Write("Id: {0}\tDevelopment year: {1}\tTimes searched: {2}\tAgeOfLang: {3}", id, devYear,timesSearched, HowOldIsLang());
         }
+        public int HowOldIsLang()
+        {
+            return DateTime.Now.Year - devYear;
 
+        }
     }
 }
