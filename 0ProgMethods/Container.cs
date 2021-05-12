@@ -40,10 +40,10 @@ namespace _0ProgMethods
                 
         }
 
-        public void Print(StreamWriter writer)
+        public void Print(StreamWriter writer, int filter)
         {
             if(head != null)
-                head.Print(writer);
+                head.Print(writer, filter);
         }
 
         public int Count()

@@ -15,6 +15,7 @@ namespace _0ProgMethods
         }
         private Nod next;
         int id = 0;
+
         public void In(lang[] langs, int currentIndex)
         {
             
@@ -28,11 +29,14 @@ namespace _0ProgMethods
             }
             
         }
+
+        int i;
+
         public void In(StreamReader reader)
         {
             string content = reader.ReadLine();
 
-            int i = int.Parse(content[0].ToString());
+            i = int.Parse(content[0].ToString());
 
             switch (i)
             {
@@ -56,12 +60,12 @@ namespace _0ProgMethods
 
         private lang langObj;
 
-        public void Print(StreamWriter writer)
+        public void Print(StreamWriter writer, int filter)
         {
-            if (langObj != null)
+            if (langObj != null && (i == filter || filter == -1))
                 langObj.Print(writer);
             if (next != null)
-                next.Print(writer);
+                next.Print(writer, filter);
         }
 
 
