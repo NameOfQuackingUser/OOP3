@@ -13,9 +13,17 @@ namespace _0ProgMethods
         public pl_op(int newid,string content):base(newid)
         {
             string[] cnt = content.Split(' ');
+            if (int.Parse(cnt[3]) > 3)
+            {
+                Console.WriteLine("Неверный аргумент");
+                throw new ArgumentException(); 
+            }
+                
+
             base.devYear = int.Parse(cnt[1]);
             base.timesSearched = int.Parse(cnt[2]);
             i = int.Parse(cnt[3]);
+            
         }
         int i = 0;
         
@@ -36,6 +44,10 @@ namespace _0ProgMethods
 
             //Console.WriteLine("\tInheritance: {0}",inh);
             writer.WriteLine("\tType: Object-oriented\tInheritance: {0}", inh);
+        }
+        public override string LangName()
+        {
+            return "oop";
         }
     }
 }

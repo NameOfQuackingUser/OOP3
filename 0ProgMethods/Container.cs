@@ -40,7 +40,7 @@ namespace _0ProgMethods
                 
         }
 
-        public void Print(StreamWriter writer, int filter)
+        public void Print(StreamWriter writer, string filter)
         {
             if(head != null)
                 head.Print(writer, filter);

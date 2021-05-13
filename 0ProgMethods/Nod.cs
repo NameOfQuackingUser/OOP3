@@ -42,14 +42,14 @@ namespace _0ProgMethods
             {
                 string content = reader.ReadLine();
 
-                i = int.Parse(content[0].ToString());
+                i = int.Parse(content.Split(' ')[0].ToString());
 
                 switch (i)
                 {
                     case 0: langObj = new pl_proc(id, content); break;
                     case 1: langObj = new pl_op(id, content); break;
                     case 2: langObj = new FunctionalLang(id, content); break;
-                    default: break;
+                    default: langObj = null; Console.WriteLine("Неверный индекс языка"); return;
                 }
             }
             catch (Exception ex)
@@ -72,11 +72,11 @@ namespace _0ProgMethods
 
         private lang langObj;
 
-        public void Print(StreamWriter writer, int filter)
+        public void Print(StreamWriter writer, string filter)
         {
             try
             {
-                if (langObj != null && (i == filter || filter == -1))
+                if (langObj != null && (filter == langObj.LangName() || filter == ""))
                     langObj.Print(writer);
                 if (next != null)
                     next.Print(writer, filter);

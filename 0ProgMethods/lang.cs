@@ -23,10 +23,17 @@ namespace _0ProgMethods
         {
             writer.Write("Id: {0}\tDevelopment year: {1}\tTimes searched: {2}\tAgeOfLang: {3}", id, devYear,timesSearched, HowOldIsLang());
         }
+
         public int HowOldIsLang()
         {
             return DateTime.Now.Year - devYear;
-
         }
+        public virtual string LangName()
+        {
+            return "";
+        }
+
+
     }
 }
+

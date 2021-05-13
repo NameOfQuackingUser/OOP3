@@ -27,6 +27,10 @@ namespace _0ProgMethods
             
             writer.WriteLine("\tType: Procedural\tAbstract classes: {0}", isItAbstract);
         }
+        public override string LangName()
+        {
+            return "proc";
+        }
 
     }
 }

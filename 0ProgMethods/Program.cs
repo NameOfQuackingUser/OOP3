@@ -33,15 +33,15 @@ namespace _0ProgMethods
 
             //Console.WriteLine("Container contains {0} elements",container.Count());
             writer.WriteLine("Container contains {0} elements", container.Count());
-            container.Print(writer, -1);
+            container.Print(writer, "");
             
 
             writer.WriteLine("Procedural only", container.Count());
-            container.Print(writer, 0);
+            container.Print(writer, "proc");
 
             container.Sort();
             writer.WriteLine("Container sorted", container.Count());
-            container.Print(writer,-1);
+            container.Print(writer, "");
 
             
 

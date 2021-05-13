@@ -12,6 +12,11 @@ namespace _0ProgMethods
         public FunctionalLang(int newid, string content) : base(newid)
         {
             string[] cnt = content.Split(' ');
+            if (int.Parse(cnt[3]) > 2)
+            {
+                Console.WriteLine("Неверный аргумент");
+                throw new ArgumentException();
+            }
             base.devYear = int.Parse(cnt[1]);
             base.timesSearched = int.Parse(cnt[2]);
             i = int.Parse(cnt[3]);
@@ -30,6 +35,10 @@ namespace _0ProgMethods
 
             //Console.WriteLine("\tInheritance: {0}",inh);
             writer.WriteLine("\tType: Functional\tTypization: {0}\t'Lazy' calculations: {1}", typ,lazyCalc);
+        }
+        public override string LangName()
+        {
+            return "functional";
         }
     }
 }
