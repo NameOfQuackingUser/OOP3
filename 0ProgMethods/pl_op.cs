@@ -36,5 +36,8 @@ namespace _0ProgMethods
             //Console.WriteLine("\tInheritance: {0}",inh);
             writer.WriteLine("\tType: Object-oriented\tInheritance: {0}", inh);
         }
+
+        
+
     }
 }

@@ -53,7 +53,10 @@ namespace _0ProgMethods
             else
                 return 0;
         }
-
+        public void PrintMM(StreamWriter writer)
+        {
+            head.PrintMM(writer);
+        }
 
     }
 }

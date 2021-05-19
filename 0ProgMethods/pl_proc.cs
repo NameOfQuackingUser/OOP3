@@ -26,6 +26,6 @@ namespace _0ProgMethods
             
             writer.WriteLine("\tType: Procedural\tAbstract classes: {0}", isItAbstract);
         }
-
+        
     }
 }
