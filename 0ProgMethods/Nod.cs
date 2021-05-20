@@ -87,50 +87,12 @@ namespace _0ProgMethods
                 {
                     if (i == j)
                         continue;
-                    try
-                    {
-                        MultiMethod((pl_op)langs[i], (pl_op)langs[j], writer);
-                    }
-                    catch (Exception ex) { }
-
-
-                    try
-                    {
-                        MultiMethod((pl_op)langs[i], (pl_proc)langs[j], writer);
-                    }
-                    catch (Exception ex) { }
-
-                    try
-                    {
-                        MultiMethod((pl_proc)langs[i], (pl_proc)langs[j], writer);
-                    }
-                    catch (Exception ex) { }
-
-                    try
-                    {
-                        MultiMethod((pl_proc)langs[i], (pl_op)langs[j], writer);
-                    }
-                    catch (Exception ex) { }
+                    langs[i].Multimethod(langs[j],writer);
                 }
             
         }
 
-        void MultiMethod(pl_op op, pl_op op2, StreamWriter writer)
-        {
-            writer.WriteLine("oop id {0} & oop id {1}",op.id,op2.id);
-        }
-        void MultiMethod(pl_op op, pl_proc proc, StreamWriter writer)
-        {
-            writer.WriteLine("oop id {0} & proc id {1}",op.id,proc.id);
-        }
-        void MultiMethod(pl_proc proc, pl_op op, StreamWriter writer)
-        {
-            writer.WriteLine("proc id {0} & oop id {1}",proc.id,op.id);
-        }
-        void MultiMethod(pl_proc proc, pl_proc proc2, StreamWriter writer)
-        {
-            writer.WriteLine("proc id {0} & proc id {1}",proc.id, proc2.id);
-        }
+        
 
     }
 }

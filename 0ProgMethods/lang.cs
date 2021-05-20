@@ -22,6 +22,8 @@ namespace _0ProgMethods
         {
             writer.Write("Id: {0}\tDevelopment year: {1}", id, devYear);
         }
+
+        public virtual void Multimethod(lang lang, StreamWriter writer) { }
         
 
     }

@@ -26,6 +26,26 @@ namespace _0ProgMethods
             
             writer.WriteLine("\tType: Procedural\tAbstract classes: {0}", isItAbstract);
         }
-        
+
+        public override void Multimethod(lang lang, StreamWriter writer)
+        {
+            switch (lang.GetType().Name)
+            {
+                case "pl_op": oopMM(writer); break;
+                case "pl_proc": procMM(writer); break;
+                default: break;
+            }
+
+        }
+
+        private void oopMM(StreamWriter writer)
+        {
+            writer.WriteLine("proc & oop");
+        }
+        private void procMM(StreamWriter writer)
+        {
+            writer.WriteLine("proc & proc");
+        }
+
     }
 }
