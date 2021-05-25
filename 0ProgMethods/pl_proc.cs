@@ -29,20 +29,16 @@ namespace _0ProgMethods
 
         public override void Multimethod(lang lang, StreamWriter writer)
         {
-            switch (lang.GetType().Name)
-            {
-                case "pl_op": oopMM(writer); break;
-                case "pl_proc": procMM(writer); break;
-                default: break;
-            }
+            lang.procMM(writer);
 
         }
 
-        private void oopMM(StreamWriter writer)
+        public override void oopMM(StreamWriter writer)
         {
             writer.WriteLine("proc & oop");
         }
-        private void procMM(StreamWriter writer)
+
+        public override void procMM(StreamWriter writer)
         {
             writer.WriteLine("proc & proc");
         }

@@ -24,7 +24,8 @@ namespace _0ProgMethods
         }
 
         public virtual void Multimethod(lang lang, StreamWriter writer) { }
-        
+        public virtual void oopMM(StreamWriter writer) { }
 
+        public virtual void procMM(StreamWriter writer) { }
     }
 }

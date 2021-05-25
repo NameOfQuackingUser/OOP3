@@ -83,7 +83,7 @@ namespace _0ProgMethods
         {
             lang[] langs = ToArray();
             for(int i = 0; i < langs.Length; i++)
-                for (int j = 0; j < langs.Length; j++)
+                for (int j = i + 1; j < langs.Length; j++)
                 {
                     if (i == j)
                         continue;
