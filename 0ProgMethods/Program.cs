@@ -13,7 +13,11 @@ namespace _0ProgMethods
         {
             Console.WriteLine("Start...");
             if (Test())
+            {
+                Console.WriteLine("Test finished");
                 Execute();
+            }
+                
             
             Console.WriteLine("Finish");
             Console.ReadLine();
