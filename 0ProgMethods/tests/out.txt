@@ -1,0 +1,28 @@
+Start...
+Container contains 9 elements
+Id: 0	Development year: 1999	Times searched: 100	AgeOfLang: 22	Type: Object-oriented	Inheritance: MULTIPLE
+Id: 1	Development year: 2011	Times searched: 300	AgeOfLang: 10	Type: Object-oriented	Inheritance: MULTIPLE
+Id: 2	Development year: 2000	Times searched: 300	AgeOfLang: 21	Type: Procedural	Abstract classes: True
+Id: 3	Development year: 1995	Times searched: 400	AgeOfLang: 26	Type: Procedural	Abstract classes: False
+Id: 4	Development year: 1993	Times searched: 200	AgeOfLang: 28	Type: Functional	Typization: strict	'Lazy' calculations: True
+Id: 5	Development year: 2002	Times searched: 400	AgeOfLang: 19	Type: Functional	Typization: dynamic	'Lazy' calculations: False
+Id: 6	Development year: 1995	Times searched: 400	AgeOfLang: 26	Type: Procedural	Abstract classes: False
+Id: 7	Development year: 2001	Times searched: 200	AgeOfLang: 20	Type: Object-oriented	Inheritance: INTERFACE
+Id: 8	Development year: 2009	Times searched: 600	AgeOfLang: 12	Type: Functional	Typization: dynamic	'Lazy' calculations: True
+Procedural only
+Id: 2	Development year: 2000	Times searched: 300	AgeOfLang: 21	Type: Procedural	Abstract classes: True
+Id: 3	Development year: 1995	Times searched: 400	AgeOfLang: 26	Type: Procedural	Abstract classes: False
+Id: 6	Development year: 1995	Times searched: 400	AgeOfLang: 26	Type: Procedural	Abstract classes: False
+Container sorted
+Id: 0	Development year: 1993	Times searched: 200	AgeOfLang: 28	Type: Functional	Typization: strict	'Lazy' calculations: True
+Id: 1	Development year: 1995	Times searched: 400	AgeOfLang: 26	Type: Procedural	Abstract classes: False
+Id: 2	Development year: 1995	Times searched: 400	AgeOfLang: 26	Type: Procedural	Abstract classes: False
+Id: 3	Development year: 1999	Times searched: 100	AgeOfLang: 22	Type: Object-oriented	Inheritance: MULTIPLE
+Id: 4	Development year: 2000	Times searched: 300	AgeOfLang: 21	Type: Procedural	Abstract classes: True
+Id: 5	Development year: 2001	Times searched: 200	AgeOfLang: 20	Type: Object-oriented	Inheritance: INTERFACE
+Id: 6	Development year: 2002	Times searched: 400	AgeOfLang: 19	Type: Functional	Typization: dynamic	'Lazy' calculations: False
+Id: 7	Development year: 2009	Times searched: 600	AgeOfLang: 12	Type: Functional	Typization: dynamic	'Lazy' calculations: True
+Id: 8	Development year: 2011	Times searched: 300	AgeOfLang: 10	Type: Object-oriented	Inheritance: MULTIPLE
+Cleared
+Container contains 0 elements
+Finish

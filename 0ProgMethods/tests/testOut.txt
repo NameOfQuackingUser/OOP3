@@ -1,0 +1,21 @@
+Start...
+Container contains 6 elements
+Id: 0	Development year: 1999	Times searched: 100	AgeOfLang: 22	Type: Object-oriented	Inheritance: MULTIPLE
+Id: 1	Development year: 2001	Times searched: 200	AgeOfLang: 20	Type: Object-oriented	Inheritance: INTERFACE
+Id: 2	Development year: 2000	Times searched: 300	AgeOfLang: 21	Type: Procedural	Abstract classes: True
+Id: 3	Development year: 1992	Times searched: 400	AgeOfLang: 29	Type: Procedural	Abstract classes: False
+Id: 4	Development year: 1993	Times searched: 200	AgeOfLang: 28	Type: Functional	Typization: strict	'Lazy' calculations: True
+Id: 5	Development year: 2002	Times searched: 400	AgeOfLang: 19	Type: Functional	Typization: dynamic	'Lazy' calculations: False
+Procedural only
+Id: 2	Development year: 2000	Times searched: 300	AgeOfLang: 21	Type: Procedural	Abstract classes: True
+Id: 3	Development year: 1992	Times searched: 400	AgeOfLang: 29	Type: Procedural	Abstract classes: False
+Container sorted
+Id: 0	Development year: 1992	Times searched: 400	AgeOfLang: 29	Type: Procedural	Abstract classes: False
+Id: 1	Development year: 1993	Times searched: 200	AgeOfLang: 28	Type: Functional	Typization: strict	'Lazy' calculations: True
+Id: 2	Development year: 1999	Times searched: 100	AgeOfLang: 22	Type: Object-oriented	Inheritance: MULTIPLE
+Id: 3	Development year: 2000	Times searched: 300	AgeOfLang: 21	Type: Procedural	Abstract classes: True
+Id: 4	Development year: 2001	Times searched: 200	AgeOfLang: 20	Type: Object-oriented	Inheritance: INTERFACE
+Id: 5	Development year: 2002	Times searched: 400	AgeOfLang: 19	Type: Functional	Typization: dynamic	'Lazy' calculations: False
+Cleared
+Container contains 0 elements
+Finish
